@@ -5,13 +5,13 @@
 <title>拖拽</title>
 <style>
 .container ul{
-	width: 350px;
+    width: 350px;
     padding: 15px;
     min-height:300px;
     background-color:#FFFFF0;
     margin:20px;
-	display: block;
-	float: left;
+    display: block;
+    float: left;
     border-radius: 5px;
     border: 1px solid #bbb;
 }
@@ -22,12 +22,12 @@
     height: 35px;
     line-height: 35px;
     border-radius: 4px;
-	margin: 0;
-	padding: 0;
-	list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
     background-color:#EED2EE;
     margin-bottom:10px;
-	-moz-user-select: none;
+    -moz-user-select: none;
     user-select: none;
     text-indent: 10px;
     color: #555;
@@ -88,9 +88,9 @@ $(function(){
 var drag = {
 
     class_name : null,  //允许放置的容器
-	permitDrag : false,	//是否允许移动标识
-
-	_x : 0,             //节点x坐标
+    permitDrag : false,	//是否允许移动标识
+    
+    _x : 0,             //节点x坐标
     _y : 0,			    //节点y坐标
     _left : 0,          //光标与节点坐标的距离
     _top : 0,           //光标与节点坐标的距离
@@ -140,8 +140,8 @@ var drag = {
 
 	//按下鼠标 执行的操作
 	mousedown : function (event){
-
-		console.log('我被mousedown了');
+    
+	console.log('我被mousedown了');
         //1.克隆临时节点，跟随鼠标进行移动
         drag.tmp_elm = $(drag.old_elm).clone();
 
@@ -171,7 +171,7 @@ var drag = {
 	//移动鼠标 执行的操作
 	mousemove : function (event){
 
-		console.log('我被mousemove了');
+	console.log('我被mousemove了');
 
         //2.计算坐标
         var e = event || window.event;
